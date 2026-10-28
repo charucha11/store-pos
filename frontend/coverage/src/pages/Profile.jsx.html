@@ -1,0 +1,406 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for src/pages/Profile.jsx</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">src/pages</a> Profile.jsx</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">81.41% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>127/156</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">79.51% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>66/83</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">76.36% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>42/55</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">88.52% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>54/61</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line high'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a>
+<a name='L78'></a><a href='#L78'>78</a>
+<a name='L79'></a><a href='#L79'>79</a>
+<a name='L80'></a><a href='#L80'>80</a>
+<a name='L81'></a><a href='#L81'>81</a>
+<a name='L82'></a><a href='#L82'>82</a>
+<a name='L83'></a><a href='#L83'>83</a>
+<a name='L84'></a><a href='#L84'>84</a>
+<a name='L85'></a><a href='#L85'>85</a>
+<a name='L86'></a><a href='#L86'>86</a>
+<a name='L87'></a><a href='#L87'>87</a>
+<a name='L88'></a><a href='#L88'>88</a>
+<a name='L89'></a><a href='#L89'>89</a>
+<a name='L90'></a><a href='#L90'>90</a>
+<a name='L91'></a><a href='#L91'>91</a>
+<a name='L92'></a><a href='#L92'>92</a>
+<a name='L93'></a><a href='#L93'>93</a>
+<a name='L94'></a><a href='#L94'>94</a>
+<a name='L95'></a><a href='#L95'>95</a>
+<a name='L96'></a><a href='#L96'>96</a>
+<a name='L97'></a><a href='#L97'>97</a>
+<a name='L98'></a><a href='#L98'>98</a>
+<a name='L99'></a><a href='#L99'>99</a>
+<a name='L100'></a><a href='#L100'>100</a>
+<a name='L101'></a><a href='#L101'>101</a>
+<a name='L102'></a><a href='#L102'>102</a>
+<a name='L103'></a><a href='#L103'>103</a>
+<a name='L104'></a><a href='#L104'>104</a>
+<a name='L105'></a><a href='#L105'>105</a>
+<a name='L106'></a><a href='#L106'>106</a>
+<a name='L107'></a><a href='#L107'>107</a>
+<a name='L108'></a><a href='#L108'>108</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">70x</span>
+<span class="cline-any cline-yes">70x</span>
+<span class="cline-any cline-yes">70x</span>
+<span class="cline-any cline-yes">69x</span>
+<span class="cline-any cline-yes">64x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">241x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">278x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">93x</span>
+<span class="cline-any cline-yes">93x</span>
+<span class="cline-any cline-yes">93x</span>
+<span class="cline-any cline-yes">93x</span>
+<span class="cline-any cline-yes">93x</span>
+<span class="cline-any cline-yes">93x</span>
+<span class="cline-any cline-yes">93x</span>
+<span class="cline-any cline-yes">93x</span>
+<span class="cline-any cline-yes">22x</span>
+<span class="cline-any cline-yes">22x</span>
+<span class="cline-any cline-yes">22x</span>
+<span class="cline-any cline-yes">22x</span>
+<span class="cline-any cline-yes">22x</span>
+<span class="cline-any cline-yes">93x</span>
+<span class="cline-any cline-yes">93x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">93x</span>
+<span class="cline-any cline-yes">651x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { useEffect, useState } from 'react';
+import '../styles/profile.css';
+&nbsp;
+const NAV = [['Dashboard','/dashboard'],['POS ขายสินค้า','/'],['สินค้า','/product'],['สต็อกสินค้า','/stock'],['รายงานยอดขาย','/report'],['จัดการผู้ใช้งาน','/users'],['หน้าโปรไฟล์ / ตั้งค่า','/profile']];
+const DEFAULTS = {shop_name:'ร้านขายของชำ',shop_address:'',shop_phone:'',shop_email:'',receipt_footer:'ขอบคุณที่อุดหนุน',receipt_show_phone:true,receipt_show_address:true,receipt_show_logo:false,receipt_logo_url:'',paper_size:'80mm',notify_low_stock:true,notify_sales:true,confirm_delete:true};
+async function api(path, options={}) {
+  const response=await fetch('/api/'+path,{credentials:'include',...options});
+  const raw=await response.text();let data;
+  try {data=JSON.parse(raw);} catch {throw new Error('เซิร์ฟเวอร์ไม่ได้ส่ง JSON กรุณาตรวจสอบ PHP Backend');}
+  if(!response.ok || !data.ok) throw new Error(data.message || <span class="branch-1 cbranch-no" title="branch not covered" >'ไม่สามารถดำเนินการได้')</span>;
+  return data;
+}
+function Toggle({
+  checked,
+  onChange,
+  disabled,
+  label = "เปิดหรือปิดการตั้งค่า"
+}) {
+  return (
+    &lt;label className="pv-switch"&gt;
+      &lt;input
+        type="checkbox"
+        checked={Boolean(checked)}
+        onChange={(e) =&gt; onChange(e.target.checked)}
+        disabled={disabled}
+        aria-label={label}
+      /&gt;
+      &lt;span aria-hidden="true" /&gt;
+      &lt;span className="pv-sr-only"&gt;{label}&lt;/span&gt;
+    &lt;/label&gt;
+  );
+}
+function Row({title,desc,children}) {return &lt;div className="pv-setting-row"&gt;&lt;div&gt;&lt;strong&gt;{title}&lt;/strong&gt;&lt;p&gt;{desc}&lt;/p&gt;&lt;/div&gt;&lt;div className="pv-setting-action"&gt;{children}&lt;/div&gt;&lt;/div&gt;;}
+export default function Profile(){
+  const [tab,setTab]=useState('store'); const [user,setUser]=useState(null); const [settings,setSettings]=useState(DEFAULTS); const [original,setOriginal]=useState(DEFAULTS);
+  const [editing,setEditing]=useState(false),[profileForm,setProfileForm]=useState({full_name:'',phone:''});
+  const [theme,setTheme]=useState(()=&gt;localStorage.getItem('grocery-theme')||'light');
+  const [density,setDensity]=useState(()=&gt;localStorage.getItem('grocery-density')||'normal');
+  const [events,setEvents]=useState([]); const [loading,setLoading]=useState(true),[saving,setSaving]=useState(false),[error,setError]=useState(''),[notice,setNotice]=useState('');
+  const [logoutConfirm,setLogoutConfirm]=useState(false);
+  const owner=user?.role==='owner';
+  const change=(key,value)=&gt;{<span class="missing-if-branch" title="if path not taken" >I</span>if(!owner)<span class="cstat-no" title="statement not covered" >return;s</span>etSettings(s=&gt;({...s,[key]:value}));};
+  async function load(){setError('');setLoading(true);try{
+    const [p,s]=await Promise.all([api('profile.php'),api('settings.php')]);setUser(p.user);setProfileForm({full_name:p.user.full_name||<span class="branch-1 cbranch-no" title="branch not covered" >'',p</span>hone:p.user.phone||''});
+    setSettings({...DEFAULTS,...s.settings});setOriginal({...DEFAULTS,...s.settings});
+    try {const activity=await api('activity.php');setEvents(activity.events||<span class="branch-1 cbranch-no" title="branch not covered" >[])</span>;} catch {setEvents([]);}
+  }catch(e){setError(e.message);}finally{setLoading(false);}}
+  useEffect(()=&gt;{void load();},[]);
+  useEffect(()=&gt;{localStorage.setItem('grocery-theme',theme);localStorage.setItem('grocery-density',density);document.documentElement.dataset.groceryTheme=theme;return ()=&gt;{delete document.documentElement.dataset.groceryTheme;};},[theme,density]);
+  async function saveSettings(e){e.preventDefault();<span class="missing-if-branch" title="if path not taken" >I</span>if(!owner)<span class="cstat-no" title="statement not covered" >return;s</span>etSaving(true);setError('');setNotice('');try{const d=await api('settings.php',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(settings)});setSettings(d.settings);setOriginal(d.settings);setNotice('บันทึกการตั้งค่าเรียบร้อยแล้ว');}catch(e){setError(e.message);}finally{setSaving(false);}}
+  async function saveProfile(e){e.preventDefault();setSaving(true);setError('');setNotice('');try{const d=await api('profile.php',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(profileForm)});setUser(d.user);setEditing(false);setNotice('บันทึกข้อมูลส่วนตัวเรียบร้อยแล้ว');}catch(e){setError(e.message);}finally{setSaving(false);}}
+  async function logout(){
+    <span class="missing-if-branch" title="if path not taken" >I</span>if(saving)<span class="cstat-no" title="statement not covered" >return;</span>
+    setSaving(true);
+    setError('');
+    try{
+      await api('logout.php',{method:'POST',cache:'no-store'});
+<span class="cstat-no" title="statement not covered" >      sessionStorage.clear();</span>
+<span class="cstat-no" title="statement not covered" >      window.location.replace('/login');</span>
+    }catch(e){
+      setError(e.message||<span class="branch-1 cbranch-no" title="branch not covered" >'ออกจากระบบไม่สำเร็จ')</span>;
+      setLogoutConfirm(false);
+      setSaving(false);
+    }
+  }
+  async function backup(){<span class="missing-if-branch" title="if path not taken" >I</span>if(!owner)<span class="cstat-no" title="statement not covered" >return;s</span>etError('');setNotice('');try{const r=await fetch('/api/backup.php',{method:'POST',credentials:'include',headers:{'Content-Type':'application/json'},body:'{}'});<span class="missing-if-branch" title="else path not taken" >E</span>if(!r.ok){const x=await r.json().<span class="fstat-no" title="function not covered" >catch(()=&gt;(<span class="cstat-no" title="statement not covered" >{</span>}))</span>;throw new Error(x.message||<span class="branch-1 cbranch-no" title="branch not covered" >'สำรองข้อมูลไม่สำเร็จ')</span>;}const blob=<span class="cstat-no" title="statement not covered" >await r.blob();c</span>onst url=<span class="cstat-no" title="statement not covered" >URL.createObjectURL(blob);c</span>onst a=<span class="cstat-no" title="statement not covered" >document.createElement('a');<span class="cstat-no" title="statement not covered" >a</span>.href=url;<span class="cstat-no" title="statement not covered" >a</span>.download='grocery_backup_'+new Date().toISOString().slice(0,10)+'.sql';<span class="cstat-no" title="statement not covered" >d</span>ocument.body.appendChild(a);<span class="cstat-no" title="statement not covered" >a</span>.click();<span class="cstat-no" title="statement not covered" >a</span>.remove();<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >s</span>etTimeout(()=&gt;<span class="cstat-no" title="statement not covered" >U</span>RL.revokeObjectURL(url),1</span>000);<span class="cstat-no" title="statement not covered" >s</span>etNotice('ดาวน์โหลดไฟล์สำรองข้อมูลแล้ว โปรดจัดเก็บอย่างปลอดภัย');}</span>catch(e){setError(e.message);}}
+  return &lt;div className={'pv-root '+(theme==='dark'?'pv-dark ':'')+(density==='compact'?'pv-compact':'')}&gt;
+    &lt;aside className="pv-sidebar"&gt;&lt;div className="pv-logo"&gt;🛒&lt;/div&gt;&lt;div className="pv-shop"&gt;{settings.shop_name||<span class="branch-1 cbranch-no" title="branch not covered" >'ร้านขายของชำ'}&lt;/div&gt;</span>&lt;nav&gt;{NAV.map(([title,url])=&gt;&lt;a key={url} href={url} className={url==='/profile'?'active':''}&gt;{title}&lt;/a&gt;)}&lt;/nav&gt;&lt;/aside&gt;
+    &lt;main className="pv-main"&gt;&lt;div className="pv-header"&gt;&lt;div&gt;&lt;h1&gt;โปรไฟล์ / ตั้งค่า&lt;/h1&gt;&lt;p&gt;จัดการข้อมูลร้านค้าและการตั้งค่าระบบ&lt;/p&gt;&lt;/div&gt;&lt;button type="button" className="pv-outline" onClick={()=&gt;{void load();}}&gt;↻ รีเฟรช&lt;/button&gt;&lt;/div&gt;
+      {error&amp;&amp;&lt;div className="pv-alert pv-error"&gt;{error}&lt;/div&gt;}{notice&amp;&amp;&lt;div className="pv-alert pv-success"&gt;{notice}&lt;/div&gt;}
+      {loading?&lt;div className="pv-card"&gt;กำลังโหลดข้อมูล...&lt;/div&gt;:user&amp;&amp;&lt;div className="pv-card pv-board"&gt;
+        &lt;div className="pv-tabs" role="tablist"&gt;&lt;button type="button" className={tab==='store'?'selected':''} <span class="fstat-no" title="function not covered" >onClick={()=&gt;<span class="cstat-no" title="statement not covered" >s</span>etTab('store')}&gt;ข</span>้อมูลร้าน&lt;/button&gt;&lt;button type="button" className={tab==='system'?'selected':''} onClick={()=&gt;setTab('system')}&gt;ตั้งค่าระบบ&lt;/button&gt;&lt;/div&gt;
+        {tab==='store'?&lt;form onSubmit={e=&gt;{void saveSettings(e);}}&gt;
+          &lt;h2&gt;🏪 ข้อมูลร้านค้า&lt;/h2&gt;&lt;p className="pv-muted"&gt;จัดการข้อมูลพื้นฐานของร้านขายของชำ&lt;/p&gt;
+          &lt;div className="pv-store-identity"&gt;&lt;div className="pv-avatar"&gt;🛒&lt;/div&gt;&lt;div&gt;&lt;strong&gt;{settings.shop_name||<span class="branch-1 cbranch-no" title="branch not covered" >'ร้านขายของชำ'}&lt;/strong&gt;</span>&lt;p&gt;ข้อมูลร้านค้า&lt;/p&gt;&lt;span className="pv-chip"&gt;เปิดให้บริการ&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+          &lt;div className="pv-separator"/&gt;
+          &lt;div className="pv-form-grid"&gt;
+            &lt;label htmlFor="pv-name"&gt;ชื่อร้าน&lt;/label&gt;&lt;input id="pv-name" value={settings.shop_name} maxLength={120} onChange={e=&gt;change('shop_name',e.target.value)} disabled={!owner} required/&gt;
+            &lt;label htmlFor="pv-address"&gt;ที่อยู่&lt;/label&gt;&lt;textarea id="pv-address" rows={3} maxLength={300} value={settings.shop_address} <span class="fstat-no" title="function not covered" >onChange={e</span>=&gt;<span class="cstat-no" title="statement not covered" >change('shop_address',e.target.value)} d</span>isabled={!owner}/&gt;
+            &lt;label htmlFor="pv-phone"&gt;เบอร์โทร&lt;/label&gt;&lt;input id="pv-phone" maxLength={20} value={settings.shop_phone} <span class="fstat-no" title="function not covered" >onChange={e</span>=&gt;<span class="cstat-no" title="statement not covered" >change('shop_phone',e.target.value)} d</span>isabled={!owner}/&gt;
+            &lt;label htmlFor="pv-email"&gt;อีเมล&lt;/label&gt;&lt;input id="pv-email" type="email" maxLength={150} value={settings.shop_email} <span class="fstat-no" title="function not covered" >onChange={e</span>=&gt;<span class="cstat-no" title="statement not covered" >change('shop_email',e.target.value)} d</span>isabled={!owner}/&gt;
+          &lt;/div&gt;
+          {owner&amp;&amp;&lt;div className="pv-form-actions"&gt;&lt;button type="submit" className="pv-primary" disabled={saving}&gt;💾 บันทึกข้อมูล&lt;/button&gt;&lt;button type="button" className="pv-outline" onClick={()=&gt;setSettings(original)}&gt;ยกเลิกการแก้ไข&lt;/button&gt;&lt;/div&gt;}
+          &lt;div className="pv-section-divider"/&gt;&lt;h2&gt;🧾 ตั้งค่าใบเสร็จ&lt;/h2&gt;&lt;p className="pv-muted"&gt;ค่าที่บันทึกไว้ให้ระบบ POS นำไปใช้เมื่อเชื่อมการพิมพ์ใบเสร็จ&lt;/p&gt;
+          &lt;div className="pv-form-grid"&gt;&lt;label htmlFor="pv-footer"&gt;ข้อความท้ายใบเสร็จ&lt;/label&gt;&lt;input id="pv-footer" maxLength={250} value={settings.receipt_footer} onChange={e=&gt;change('receipt_footer',e.target.value)} disabled={!owner}/&gt;&lt;label htmlFor="pv-paper"&gt;ขนาดกระดาษ&lt;/label&gt;&lt;select id="pv-paper" value={settings.paper_size} onChange={e=&gt;change('paper_size',e.target.value)} disabled={!owner}&gt;&lt;option value="58mm"&gt;58 มม.&lt;/option&gt;&lt;option value="80mm"&gt;80 มม.&lt;/option&gt;&lt;option value="A4"&gt;A4&lt;/option&gt;&lt;/select&gt;&lt;label htmlFor="pv-logo-url"&gt;URL โลโก้ (HTTPS)&lt;/label&gt;&lt;input id="pv-logo-url" placeholder="https://..." value={settings.receipt_logo_url} <span class="fstat-no" title="function not covered" >onChange={e</span>=&gt;<span class="cstat-no" title="statement not covered" >change('receipt_logo_url',e.target.value)} d</span>isabled={!owner}/&gt;&lt;/div&gt;
+          &lt;div className="pv-settings-list"&gt;&lt;Row title="แสดงที่อยู่บนใบเสร็จ" desc="แสดงที่อยู่ร้านเมื่อพิมพ์ใบเสร็จ"&gt;&lt;Toggle label="แสดงที่อยู่บนใบเสร็จ" checked={settings.receipt_show_address} disabled={!owner} <span class="fstat-no" title="function not covered" >onChange={v</span>=&gt;<span class="cstat-no" title="statement not covered" >change('receipt_show_address',v)}/&gt;</span>&lt;/Row&gt;&lt;Row title="แสดงเบอร์โทรร้าน" desc="พิมพ์เบอร์ติดต่อบนใบเสร็จ"&gt;&lt;Toggle label="แสดงเบอร์โทรร้าน" checked={settings.receipt_show_phone} disabled={!owner} <span class="fstat-no" title="function not covered" >onChange={v</span>=&gt;<span class="cstat-no" title="statement not covered" >change('receipt_show_phone',v)}/&gt;</span>&lt;/Row&gt;&lt;Row title="แสดงโลโก้ร้าน" desc="ใช้ URL โลโก้ที่กรอกด้านบน"&gt;&lt;Toggle label="แสดงโลโก้ร้าน" checked={settings.receipt_show_logo} disabled={!owner} onChange={v=&gt;change('receipt_show_logo',v)}/&gt;&lt;/Row&gt;&lt;/div&gt;
+          {owner&amp;&amp;&lt;div className="pv-form-actions"&gt;&lt;button className="pv-primary" type="submit" disabled={saving}&gt;💾 บันทึกข้อมูลร้านและใบเสร็จ&lt;/button&gt;&lt;/div&gt;}
+        &lt;/form&gt;:&lt;div&gt;
+          &lt;h2&gt;⚙️ ตั้งค่าระบบ&lt;/h2&gt;&lt;p className="pv-muted"&gt;กำหนดการทำงานและรูปแบบการแจ้งเตือนของระบบ&lt;/p&gt;
+          &lt;form onSubmit={e=&gt;{void saveSettings(e);}}&gt;&lt;div className="pv-settings-list"&gt;
+            &lt;Row title="🔔 แจ้งเตือนสินค้าใกล้หมด" desc="เก็บค่าการแจ้งเตือนเมื่อสินค้าเหลือ 5 ชิ้นหรือน้อยกว่า"&gt;&lt;Toggle label="แจ้งเตือนสินค้าใกล้หมด" checked={settings.notify_low_stock} onChange={v=&gt;change('notify_low_stock',v)} disabled={!owner}/&gt;&lt;/Row&gt;
+            &lt;Row title="💰 แจ้งเตือนยอดขาย" desc="เปิดหรือปิดการแจ้งเตือนเมื่อมีการขายสินค้า"&gt;&lt;Toggle label="แจ้งเตือนยอดขาย" checked={settings.notify_sales} <span class="fstat-no" title="function not covered" >onChange={v</span>=&gt;<span class="cstat-no" title="statement not covered" >change('notify_sales',v)} d</span>isabled={!owner}/&gt;&lt;/Row&gt;
+            &lt;Row title="🗑️ ยืนยันก่อนลบข้อมูล" desc="ตั้งค่าว่าต้องแสดงข้อความยืนยันก่อนลบข้อมูลสำคัญ"&gt;&lt;Toggle label="ยืนยันก่อนลบข้อมูล" checked={settings.confirm_delete} <span class="fstat-no" title="function not covered" >onChange={v</span>=&gt;<span class="cstat-no" title="statement not covered" >change('confirm_delete',v)} d</span>isabled={!owner}/&gt;&lt;/Row&gt;
+            &lt;Row title="🌙 โหมดมืด" desc="เปลี่ยนธีมของหน้าโปรไฟล์นี้"&gt;&lt;Toggle label="โหมดมืด" checked={theme==='dark'} onChange={v=&gt;setTheme(v?'dark':<span class="branch-1 cbranch-no" title="branch not covered" >'light')</span>}/&gt;&lt;/Row&gt;
+            &lt;Row title="📋 รูปแบบการแสดงผล" desc="ตั้งค่าความหนาแน่นของข้อมูลในหน้าโปรไฟล์"&gt;&lt;select aria-label="รูปแบบการแสดงผล" value={density} onChange={e=&gt;setDensity(e.target.value)}&gt;&lt;option value="normal"&gt;ปกติ&lt;/option&gt;&lt;option value="compact"&gt;กระชับ&lt;/option&gt;&lt;/select&gt;&lt;/Row&gt;
+          &lt;/div&gt;&lt;div className="pv-form-actions"&gt;{owner&amp;&amp;&lt;button type="submit" className="pv-primary" disabled={saving}&gt;💾 บันทึกการตั้งค่า&lt;/button&gt;}&lt;button type="button" className="pv-outline" onClick={()=&gt;{if(owner){setSettings(s=&gt;({...s,notify_low_stock:true,notify_sales:true,confirm_delete:true}));setNotice('คืนค่าการแจ้งเตือนบนหน้าจอแล้ว กดบันทึกการตั้งค่าเพื่อยืนยัน');}else{setNotice('คืนค่าการแสดงผลเฉพาะบัญชีนี้แล้ว');}setTheme('light');setDensity('normal');}}&gt;↩ คืนค่าเริ่มต้น&lt;/button&gt;&lt;/div&gt;&lt;/form&gt;
+          &lt;div className="pv-section-divider"/&gt;&lt;h2&gt;👤 บัญชีของฉัน&lt;/h2&gt;
+          &lt;div className="pv-profile-line"&gt;&lt;div className="pv-avatar small"&gt;{(user.full_name||<span class="branch-1 cbranch-no" title="branch not covered" >user.username||<span class="branch-2 cbranch-no" title="branch not covered" >'</span>?')</span>.slice(0,1)}&lt;/div&gt;&lt;div&gt;&lt;b&gt;{user.full_name||<span class="branch-1 cbranch-no" title="branch not covered" >user.username}&lt;/b&gt;</span>&lt;p&gt;@{user.username} · {owner?'เจ้าของร้าน':'พนักงานขาย'}&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+          {editing?&lt;form className="pv-account-form" onSubmit={e=&gt;{void saveProfile(e);}}&gt;&lt;label&gt;ชื่อ-นามสกุล&lt;input value={profileForm.full_name} onChange={e=&gt;setProfileForm(f=&gt;({...f,full_name:e.target.value}))} required/&gt;&lt;/label&gt;&lt;label&gt;เบอร์โทร&lt;input value={profileForm.phone} <span class="fstat-no" title="function not covered" >onChange={e</span>=&gt;<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >setProfileForm(f</span>=&gt;(<span class="cstat-no" title="statement not covered" >{...f,phone:e.target.value}))</span>}/&gt;</span>&lt;/label&gt;&lt;div className="pv-form-actions"&gt;&lt;button type="submit" className="pv-primary" disabled={saving}&gt;บันทึกข้อมูลส่วนตัว&lt;/button&gt;&lt;button type="button" className="pv-outline" onClick={()=&gt;setEditing(false)}&gt;ยกเลิก&lt;/button&gt;&lt;/div&gt;&lt;/form&gt;:&lt;div className="pv-inline-buttons"&gt;&lt;button type="button" className="pv-outline" onClick={()=&gt;setEditing(true)}&gt;✎ แก้ไขชื่อ / เบอร์โทร&lt;/button&gt;&lt;button type="button" className="pv-outline pv-danger" onClick={()=&gt;setLogoutConfirm(true)}&gt;ออกจากระบบ&lt;/button&gt;&lt;/div&gt;}
+          &lt;div className="pv-section-divider"/&gt;&lt;h2&gt;🕘 ประวัติการตั้งค่า&lt;/h2&gt;{events.length?&lt;div className="pv-audit"&gt;{events.slice(0,15).map((x,i)=&gt;&lt;div key={i}&gt;&lt;span&gt;&lt;strong&gt;{x.username}&lt;/strong&gt; — {x.description||<span class="branch-1 cbranch-no" title="branch not covered" >x.action}&lt;/span&gt;</span>&lt;small&gt;{x.created_at}&lt;/small&gt;&lt;/div&gt;)}&lt;/div&gt;:&lt;p className="pv-muted"&gt;ยังไม่มีประวัติที่บันทึกไว้ (ระบบนี้จะแสดงประวัติจากฟังก์ชันตั้งค่าใหม่)&lt;/p&gt;}
+          {owner&amp;&amp;&lt;&gt;&lt;div className="pv-section-divider"/&gt;&lt;h2&gt;🗄️ สำรองข้อมูล&lt;/h2&gt;&lt;p className="pv-muted"&gt;ดาวน์โหลดฐานข้อมูล SQL สำหรับเก็บสำรอง ไฟล์มีข้อมูลส่วนบุคคลและแฮชรหัสผ่าน โปรดเก็บเป็นความลับ&lt;/p&gt;&lt;button type="button" className="pv-outline" onClick={()=&gt;{void backup();}}&gt;⬇ ดาวน์โหลดไฟล์สำรองข้อมูล SQL&lt;/button&gt;&lt;/&gt;}
+        &lt;/div&gt;}
+      &lt;/div&gt;}
+    &lt;/main&gt;
+    {logoutConfirm&amp;&amp;&lt;div className="pv-overlay"&gt;&lt;div className="pv-modal"&gt;&lt;h2&gt;ยืนยันออกจากระบบ&lt;/h2&gt;&lt;p&gt;ต้องการออกจากระบบบัญชีนี้หรือไม่?&lt;/p&gt;&lt;div className="pv-inline-buttons"&gt;&lt;button type="button" className="pv-primary" onClick={()=&gt;{void logout();}} disabled={saving}&gt;ออกจากระบบ&lt;/button&gt;&lt;button type="button" className="pv-outline" onClick={()=&gt;setLogoutConfirm(false)}&gt;ยกเลิก&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;}
+  &lt;/div&gt;;
+}
+&nbsp;</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2026-10-28T21:58:00.000Z
+            </div>
+        <script src="../../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../../sorter.js"></script>
+        <script src="../../block-navigation.js"></script>
+    </body>
+</html>
+    

@@ -1,0 +1,2 @@
+/* ลบสไตล์ตั้งต้นของ Vite เพื่อให้ CSS จาก pos.html ทำงานเหมือนเดิม */
+html, body, #root { margin: 0; min-height: 100%; }

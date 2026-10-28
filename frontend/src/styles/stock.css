@@ -1,0 +1,55 @@
+/* Scoped to Stock only; no global .card/.sidebar/.table rules. */
+.stock-root, .stock-root * { box-sizing: border-box; }
+.stock-root { display:flex; min-height:100vh; background:#f1f4f7; color:#333; font-family:Arial,sans-serif; }
+.stock-sidebar { width:240px; flex-shrink:0; background:#163653; color:#fff; padding:25px 15px; }
+.stock-logo { text-align:center; font-size:45px; margin-bottom:10px; }
+.stock-shop-name { text-align:center; font-size:22px; font-weight:bold; margin-bottom:30px; }
+.stock-menu { display:block; padding:14px 15px; margin:5px 0; border-radius:6px; color:white; text-decoration:none; font-size:17px; }
+.stock-menu:hover { background:#355b78; }
+.stock-menu.active { background:#a9c4d8; color:#173a5e; font-weight:bold; }
+.stock-main { flex:1; min-width:0; padding:35px; }
+.stock-main h1 { color:#244968; margin:0 0 25px; }
+.stock-summary { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:15px; margin-bottom:25px; }
+.stock-summary-card { border-radius:10px; padding:18px 20px; min-height:105px; }
+.stock-summary-card h3 { margin:0 0 12px; font-size:15px; font-weight:normal; }
+.stock-summary-card strong { display:block; font-size:26px; overflow-wrap:anywhere; }
+.stock-summary-card small { display:block; font-size:14px; margin-top:5px; }
+.stock-blue { background:#d4e0e8; color:#38566d; }
+.stock-green { background:#d8e2dc; color:#456154; }
+.stock-yellow { background:#e5dfcf; color:#6d6042; }
+.stock-pink { background:#e2d7d7; color:#704f4f; }
+.stock-card { background:white; border-radius:12px; padding:20px; box-shadow:0 2px 8px rgba(40,60,80,.08); }
+.stock-card-heading { color:#334f66; font-size:20px; font-weight:bold; margin-bottom:20px; }
+.stock-tools { display:flex; flex-wrap:wrap; gap:10px; margin-bottom:20px; }
+.stock-search-wrap { display:flex; align-items:center; gap:8px; flex:1; min-width:220px; padding:0 12px; border:1px solid #d3dce3; border-radius:7px; }
+.stock-search-wrap:focus-within { border-color:#7394aa; }
+.stock-search-wrap input { flex:1; width:100%; padding:12px 0; border:0; outline:0; background:white; font-size:15px; }
+.stock-tools select { padding:12px 15px; border:1px solid #d3dce3; border-radius:7px; background:white; color:#444; font-size:15px; }
+.stock-table-wrap { width:100%; overflow-x:auto; }
+.stock-table { width:100%; min-width:850px; border-collapse:collapse; }
+.stock-table th { background:#dce6ed; color:#334f66; padding:13px 10px; text-align:center; font-weight:bold; }
+.stock-table td { padding:13px 10px; text-align:center; border-bottom:1px solid #e1e5e8; }
+.stock-table tr:last-child td { border-bottom:none; }
+.stock-table tbody tr:hover { background:#f8fafb; }
+.stock-status { display:inline-block; padding:6px 14px; border-radius:15px; font-size:13px; font-weight:bold; }
+.stock-status-normal { background:#d8e2dc; color:#456154; }
+.stock-status-low { background:#e5dfcf; color:#6d6042; }
+.stock-status-out { background:#e2d7d7; color:#704f4f; }
+.stock-edit-btn { border:0; background:#d4e0e8; color:#38566d; padding:7px 13px; border-radius:6px; cursor:pointer; font-size:13px; }
+.stock-edit-btn:hover { background:#bfcfdb; }
+.stock-empty { text-align:center; padding:35px; color:#888; }
+.stock-error { padding:12px; background:#fff1f1; color:#9d3434; border-radius:8px; }
+.stock-notice { padding:12px; background:#e4f0e9; color:#456154; border-radius:8px; }
+.stock-modal-backdrop { position:fixed; inset:0; z-index:1000; background:rgba(0,0,0,.35); display:flex; align-items:center; justify-content:center; padding:16px; }
+.stock-modal { width:100%; max-width:400px; background:white; border-radius:12px; padding:25px; box-shadow:0 5px 20px rgba(0,0,0,.2); }
+.stock-modal h2 { margin:0 0 20px; color:#334f66; }
+.stock-modal label { display:block; margin-bottom:14px; font-weight:bold; }
+.stock-modal input { display:block; width:100%; margin-top:7px; padding:11px; border:1px solid #ccd6dd; border-radius:6px; font-size:15px; }
+.stock-modal-actions { display:flex; justify-content:flex-end; gap:10px; }
+.stock-modal-actions button { padding:10px 18px; border:0; border-radius:6px; cursor:pointer; }
+.stock-cancel { background:#e6e6e6; }
+.stock-save { background:#355b78; color:white; }
+.stock-modal-actions button:disabled { opacity:.6; cursor:not-allowed; }
+@media (max-width:1000px) { .stock-summary { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (max-width:900px) { .stock-sidebar { width:200px; } }
+@media (max-width:700px) { .stock-root { flex-direction:column; } .stock-sidebar { width:100%; } .stock-main { padding:20px; } .stock-summary { grid-template-columns:1fr; } }

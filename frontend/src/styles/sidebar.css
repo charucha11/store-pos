@@ -1,0 +1,46 @@
+/* Shared sidebar: scoped classes to avoid affecting page-specific styles */
+.shared-sidebar {
+  width: 260px;
+  min-width: 260px;
+  min-height: 100vh;
+  background: #193957;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 16px;
+  box-sizing: border-box;
+}
+.shared-sidebar-logo { text-align: center; font-size: 44px; line-height: 1.4; }
+.shared-sidebar-shop { text-align: center; font-size: 22px; font-weight: 700; margin: 10px 0 24px; }
+.shared-sidebar-nav { display: flex; flex-direction: column; gap: 5px; }
+.shared-sidebar-link {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 14px 16px;
+  border-radius: 7px;
+}
+.shared-sidebar-link:hover { background: #315a7d; color: #fff; }
+.shared-sidebar-link.active { background: #a9c9df; color: #173b59; font-weight: 700; }
+.shared-sidebar-logout {
+  display: block;
+  width: 100%;
+  margin-top: 24px;
+  padding: 13px 12px;
+  background: #315a7d;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.shared-sidebar-logout:hover { background: #416d92; }
+.shared-sidebar-logout:disabled { opacity: .6; cursor: wait; }
+.shared-sidebar-error { font-size: 13px; color: #ffd5d5; margin: 10px 0 0; }
+@media (max-width: 760px) {
+  .shared-sidebar { width: 210px; min-width: 210px; padding: 18px 10px; }
+  .shared-sidebar-link { padding: 11px 9px; font-size: 14px; }
+  .shared-sidebar-shop { font-size: 18px; }
+}

@@ -1,0 +1,11 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "เปิดระบบร้านค้า",
+            "url": "http://localhost:8000/login.html"
+        }
+    ]
+}
